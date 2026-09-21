@@ -1,2 +1,18 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
 @import 'fonts/stylesheet.css';
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.left-page {
+    flex:1;
+    border: 2px solid red;
+    background: url("imgs/halie-west-25xggax4bSA-unsplash.jpg") 0% / cover no-repeat;
+}
+
+.right-page {
+    flex:2;
+    border: 2px solid blue;
+}
