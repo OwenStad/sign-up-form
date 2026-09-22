@@ -8,11 +8,42 @@ body {
 
 .left-page {
     flex:1;
-    border: 2px solid red;
     background: url("imgs/halie-west-25xggax4bSA-unsplash.jpg") 0% / cover no-repeat;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .right-page {
     flex:2;
-    border: 2px solid blue;
+}
+
+.title {
+    height: 150px;
+    padding:20px;
+    margin: 180px 0 0 0;
+    background-color: rgb(0,0, 0, 0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-page h1 {
+    font-family: Norse;
+    margin: 0; 
+    font-size: 80px;
+}
+
+.title img{
+    height: 100%;    
+}
+
+.left-page footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: white;
 }
