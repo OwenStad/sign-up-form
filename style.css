@@ -4,6 +4,7 @@
 body {
     display: flex;
     height: 100vh;
+    font-size: 17px;
 }
 
 .left-page {
@@ -46,36 +47,48 @@ footer a {
 
 .right-page {
     flex:2;
+    height: 100vh;
     background-color: rgb(243, 243, 243);
     display: flex;
     flex-direction: column;
 }
 
 .sign-up-text {
-    margin: 100px 30px 40px;
+    max-width: 500px;
+    margin: 100px 30px 20px;
     font-weight: 600;
 }
 
 .sign-up-form {
     width: 100%;
-    background-color: white;
-    box-shadow: 0px 3px 5px lightgray;
-    padding: 10px 30px 20px; 
+    position: relative;
 }
 
 .sign-up-form .account-details {
-    display: flex;
-    flex-wrap: wrap;
-    width: 700px;
+    width: 100%;
+    margin:0;
+    background-color: white;
+    padding: 60px 30px 25px;
     border:none;
+    box-shadow: 0px 3px 5px lightgray;
 }
 
 .account-details legend {
+    position: absolute;
+    top: 10px;
     font-size: 20px;
     font-weight: 500;
 }
 
-label{
+.input-wrapper {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 20px;
+}
+
+label {
     display: block;
     font-size: 9px;
     font-weight: 520;
@@ -83,10 +96,38 @@ label{
     letter-spacing: 1.5px;
 }
 
-.account-details div {
-    margin: 10px 60px 5px 0;
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 0px 3px 5px rgb(185, 185, 185);
+}
+
+input[type="password"]:user-invalid {
+    outline: 1px solid red;
 }
 
 button {
-    width: 200px;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0px 3px 5px lightgray;
+    background-color: #596D48;
+    border-style: none;
+    border-radius: 6px;
+    padding: 13px 50px;
+    margin: 30px 30px 0;
+}
+
+.login-prompt {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.login-prompt a {
+    font-weight: 500;
+    color: #596D48
 }
