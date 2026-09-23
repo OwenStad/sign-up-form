@@ -52,7 +52,7 @@ footer a {
 }
 
 .sign-up-text {
-    margin: 100px 30px 40px;
+    margin: 100px 30px 40px 30px;
     font-weight: 600;
 }
 
@@ -60,31 +60,22 @@ footer a {
     width: 100%;
     background-color: white;
     box-shadow: 0px 3px 5px lightgray;
-    padding: 10px 30px 20px; 
 }
 
-.sign-up-form .account-details {
+fieldset {
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
+    width: 500px;
     border:none;
 }
 
-.account-details legend {
-    font-size: 20px;
+legend {
+    font-size: 50px;
     font-weight: 500;
 }
 
 label{
     display: block;
-    font-size: 9px;
-    font-weight: 520;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1.5px;
-}
-
-.account-details div {
-    margin: 10px 60px 5px 0;
 }
 
 button {
